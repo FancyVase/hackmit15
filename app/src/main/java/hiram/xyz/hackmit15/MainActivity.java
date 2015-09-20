@@ -51,18 +51,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         checkButton.setOnClickListener(listener);
-
-//        Indico.init(this, getString(R.string.indico_api_key), null);
-//
-//        try {
-//            Indico.sentiment.predict("indico is so easy to use!", new IndicoCallback<IndicoResult>() {
-//                @Override public void handle(IndicoResult result) throws IndicoException {
-//                    Log.i("Indico Sentiment", "sentiment of: " + result.getSentiment());
-//                }
-//            });
-//        } catch (IOException | IndicoException e) {
-//            e.printStackTrace();
-//        }
     }
 
     @Override
