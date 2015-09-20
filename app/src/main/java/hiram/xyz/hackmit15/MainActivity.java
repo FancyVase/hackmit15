@@ -2,7 +2,6 @@ package hiram.xyz.hackmit15;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
                             long sentimentResult = Math.round(result.getSentiment()*100);
 
                             resultTextView.setText(String.valueOf(sentimentResult) + "%");
-                            Log.i("Indico Sentiment", "sentiment of: " + result.getSentiment());
                         }
                     });
                 } catch (IOException | IndicoException e) {
